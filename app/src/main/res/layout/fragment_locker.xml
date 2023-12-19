@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/locker_save_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보관함"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/locker_login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textSize="13dp"
+        android:textColor="#3f3fff"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/locker_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/locker_save_text">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/locker_content_tb"
+            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            app:tabIndicatorFullWidth="false"
+            app:tabSelectedTextColor="#3f3fff"
+            app:tabIndicatorColor="#3f3fff"/>
+
+    </LinearLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/locker_content_vp"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            app:layout_constraintTop_toBottomOf="@id/locker_content_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

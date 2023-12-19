@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/home_pannel_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_first_album_default"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf ="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/home_pannel_btn_nugu_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/btn_main_mike"
+        app:layout_constraintEnd_toStartOf="@id/home_pannel_btn_ticket_iv"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/home_pannel_btn_ticket_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/btn_main_ticket"
+        app:layout_constraintEnd_toStartOf="@id/home_pannel_btn_setting_iv"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/home_pannel_btn_setting_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/btn_main_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/home_pannel_title_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="포근하게 덮어주는 꿈의 \n목소리"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_pannel_btn_nugu_iv"/>
+
+    <ImageView
+        android:id="@+id/home_pannel_btn_play_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_panel_play_large"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_pannel_btn_setting_iv"/>
+
+    <ImageView
+        android:id="@+id/home_pannel_album1_img_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_album_exp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/home_pannel_background" />
+
+    <TextView
+        android:id="@+id/home_pannel_album1_title_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="잠이 안온다"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintStart_toEndOf="@id/home_pannel_album1_img_iv"
+        app:layout_constraintBottom_toBottomOf="@id/home_pannel_album1_img_iv"
+        />
+
+    <TextView
+        android:id="@+id/home_pannel_album1_singer_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="젠(zen)"
+        android:textColor="@color/white"
+        android:layout_marginStart="14dp"
+        app:layout_constraintStart_toEndOf="@id/home_pannel_album1_img_iv"
+        app:layout_constraintBottom_toBottomOf="@id/home_pannel_album1_img_iv"
+        />
+
+    <ImageView
+        android:id="@+id/home_pannel_album2_img_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_album_exp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/home_pannel_album1_img_iv"/>
+
+    <TextView
+        android:id="@+id/home_pannel_album2_title_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="잠이 안온다"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintStart_toEndOf="@id/home_pannel_album2_img_iv"
+        app:layout_constraintBottom_toBottomOf="@id/home_pannel_album2_img_iv"
+        />
+
+    <TextView
+        android:id="@+id/home_pannel_album2_singer_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="젠(zen)"
+        android:textColor="@color/white"
+        android:layout_marginStart="14dp"
+        app:layout_constraintStart_toEndOf="@id/home_pannel_album2_img_iv"
+        app:layout_constraintBottom_toBottomOf="@id/home_pannel_album2_img_iv"
+        />
+
+    <TextView
+        android:id="@+id/home_pannel_count_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 15곡 2019.11.11"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toTopOf="@id/home_pannel_album2_img_iv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
