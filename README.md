@@ -8,8 +8,7 @@
 
 ### 📱 구현화면
 
-![Uploading image.png…]()
-
+![image](https://github.com/RakunKo/flo-clone-coding/assets/145656942/e38fda27-e1cc-4167-b271-c72a844caafc)
 
 ### 🔩 기능
 
