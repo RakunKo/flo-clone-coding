@@ -8,7 +8,8 @@
 
 ### 📱 구현화면
 
-![무제-2.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/e57305b3-d2ae-421a-93c5-d741178000ba/774f8262-ada2-421a-816d-471d087e38ed/%E1%84%86%E1%85%AE%E1%84%8C%E1%85%A6-2.jpg)
+![Uploading image.png…]()
+
 
 ### 🔩 기능
 
